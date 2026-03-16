@@ -1,15 +1,15 @@
-# 🌤️ Weather Data Pipeline
+# Weather Data Pipeline
 
-## 📌 About
+## About
 A Python-based Weather Data Pipeline that fetches real-time weather data from OpenWeatherMap API, transforms it, and stores it in MySQL database.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python 3
 - OpenWeatherMap API
 - MySQL Connector
 - Cryptography (Fernet)
 
-## 📁 Project Structure
+## Project Structure
 | File | Description |
 |------|-------------|
 | `pipeline_runner.py` | Main pipeline runner |
@@ -19,19 +19,19 @@ A Python-based Weather Data Pipeline that fetches real-time weather data from Op
 | `password_utils.py` | Encrypted password handler |
 | `.gitignore` | Hides secret.key from GitHub |
 
-## ⚙️ ETL Process
-- 📤 **Extract** → Real-time weather data from OpenWeatherMap API
-- ⚙️ **Transform** → Extract temperature, humidity, wind speed, description
-- 📥 **Load** → Store into `weather_db.weather_data` MySQL table
+## ETL Process
+- **Extract** → Real-time weather data from OpenWeatherMap API
+- **Transform** → Extract temperature, humidity, wind speed, description
+- **Load** → Store into `weather_db.weather_data` MySQL table
 
-## 🏙️ Cities Tracked
+## Cities Tracked
 - Chennai, Mumbai, Delhi, Bangalore, Kolkata
 
-## 🔒 Security
+## Security
 - `secret.key` is never uploaded to GitHub
 - Password is encrypted using Fernet encryption
 
-## ▶️ How to Run
+## How to Run
 1. Clone the repository
 2. Install dependencies:
 ```
